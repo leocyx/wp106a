@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+input { width:30px }      
+    </style>
+    <title>小時鐘</title>
+  </head>
+  <body>
+<script>
+
+var counter =10
+var state = "stop"
+function printTime() {
+  if (state=="start"){
+    if (counter==0) {
+      counter =10
+      stop()
+    }
+      timelabel.innerText = counter--
+  setTimeout(printTime, 1000);
+  }
+}
+
+function start(){
+  if (counter==0) counter=100
+  state = "start"
+  printTime()
+}
+
+function stop(){
+ state = "stop";
+
+}
+</script>    
+    <label id="timelabel">10</label>
+    <button id="start" onclick="start()">Start</button>
+    <button id="stop" onclick="stop()">Stop</button>
+  </body>
+</html>
