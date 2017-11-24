@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>簡易記帳</title>
+    <style>
+        label{
+            font-size: 60px;
+        }
+        
+    </style>
+    <script src="work.js"></script>
+</head>
+<body>
+    
+    <div>
+        <input id="amount" type="text">
+        <button onclick="work('eat')">飲食</button>
+        <button onclick="work('traffic')">交通</button>
+        <button onclick="work('leisure')">休閒</button>
+        <label style="margin-left:100px">總共:</label>
+        <label id="total">0</label>
+    </div>
+    <div>
+        <div id="eatlist" style="border:solid; width:200px; float:left;">1</div>
+        <div id="trafficlist"  style="border:solid; width:200px; float:left;">2</div>
+        <div id="leisurelist" style="border:solid; width:200px; float:left;">3</div>
+    </div>
+</body>
+</html>
