@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>簡易記帳</title>
+    <style>
+        label{
+            font-size: 60px;
+        }
+        #description{
+            height: 100px;
+        }
+        div{
+            word-wrap: break-word;
+        }
+        textarea{
+            margin-bottom: 10px;
+        }
+    </style>
+    <script src="work.js"></script>
+</head>
+<body>
+    
+    <div>
+        <input id="amount" type="text" placeholder="輸入金額">
+        <button onclick="work('eat')">飲食</button>
+        <button onclick="work('traffic')">交通</button>
+        <button onclick="work('leisure')">休閒</button>
+        <label style="margin-left:100px">總共:</label>
+        <label id="total">0</label><br>
+        <textarea id="description" placeholder="描述"></textarea><br>
+        <button onclick="work('eatdetail')">飲食紀錄</button>
+        <button onclick="work('trafficdetail')">交通紀錄</button>
+        <button onclick="work('leisuredetail')">休閒紀錄</button>
+    </div>
+    
+    <div style="margin-top:20px">
+        <label id="labeldetail" style="font-size:40px; margin-bottom:50px;"></label><br>
+        <div id="detail" style="margin-top:10px;"></div>
+    </div>
+</body>
+</html>
