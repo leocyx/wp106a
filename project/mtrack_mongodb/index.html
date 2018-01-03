@@ -4,12 +4,14 @@
     <style>
         label{
             font-size: 60px;
+            
         }
         #description{
             height: 100px;
         }
         div{
             word-wrap: break-word;
+            
         }
         textarea{
             margin-bottom: 10px;
@@ -17,14 +19,14 @@
     </style>
     <script src="work.js"></script>
 </head>
-<body>
+<body onload="openwin()">
     
     <div>
         <input id="amount" type="text" placeholder="輸入金額">
         <button onclick="work('eat')">飲食</button>
         <button onclick="work('traffic')">交通</button>
         <button onclick="work('leisure')">休閒</button>
-        <label style="margin-left:100px">總共:</label>
+        <label style="margin-left:70px;margin-bottom:50px;">總共:</label>
         <label id="total">0</label><br>
         <textarea id="description" placeholder="描述"></textarea><br>
         <button onclick="work('eatdetail')">飲食紀錄</button>

@@ -1,5 +1,8 @@
 {
-  "name"    : "mtrack",
-  "version" : "0.1.0",
-  "main"    : "main.js"
+  "name": "mtrack",
+  "version": "0.1.0",
+  "main": "main.js",
+  "dependencies": {
+    "mongojs": "^2.4.1"
+  }
 }
